@@ -1,0 +1,57 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>第九组</title>
+<style type="text/css">
+body {
+	background-color:#09C;
+}
+</style>
+</head>
+
+<body id="body" style="background-image:url(a.jpg)"> 
+<center>
+<h1>搜搜看</h1>
+<div>请输入商品型号 <input type="text" id="sf" name="spxh" value="000" />
+<input type="button" id="sj" value="添加一个商品输入">
+</div>
+<div>请输入商品数量 <input type="text" id="pnum" value="10"></input> </div>
+
+<div>
+
+<button onclick="window.location.href= ''">提交</button>
+<script> 
+
+        function addProduct() { 
+
+            var a = document.getElementById("sf"); 
+
+            var d = document.createElement("br"); 
+
+            var c =a.cloneNode(false); 
+
+            c.setAttribute("type","text"); 
+
+            var b = document.getElementById("body"); 
+
+            b.appendChild(d); 
+
+            b.appendChild(c); 
+
+        } 
+
+        window.onload=function () { 
+
+            document.getElementById("sj").onclick=addProduct; 
+
+        } 
+
+    </script>
+</div>
+</center>
+
+
+
+</body>
+</html>
